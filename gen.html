@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <body style="background-color:rgb(40, 40, 40);">
+     </body>
+
+        <head>
+            <style>
+                h2 {
+                    color: rgb(255, 255, 255);
+                    font-size: 100px;
+                    font-family: sans-serif;
+                    text-align: center;
+                }
+                p{ 
+                    font-size: 50px;
+                    color: rgb(255, 255, 255);
+                    font-family: sans-serif;
+                    text-align: center;
+                }
+                .button {
+  background-color: #fff82c;
+
+  border: black;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+}
+                
+            </style>
+        </head>
+<body>
+    <h2>CODING IDEA GENERATOR</h2>
+</body>
+<div style="text-align:center">
+<a href="#" class="button"onclick="randomizeFunction()">Generate</a>
+</div>
+  <p id="randomProject"></p>
+</html>
+
+<script>
+const myList = ['Pi calculator', 'Image classifier', 'General calculator', 'Voice recondition', 'Mean calculator', 'Mode calculator', 'Median calculator', 'Range calculator', 'General calculator', 'Expression calculator', 'Algebra calculator', 'Spell check', 'Virtual assistant', 'Climate predictor', 'What sould I eat today?', 'Chess robot', 'Random number generator', 'Drawing platform', 'Name generator', 'Piano', 'Face id'];
+
+randomizeFunction()
+
+function randomizeFunction() {
+    document.getElementById("randomProject").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+}
+</script>
